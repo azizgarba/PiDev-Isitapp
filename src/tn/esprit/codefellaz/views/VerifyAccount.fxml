@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="blue-panel" stylesheets="@/tn/esprit/codefellaz/styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.VerifyAccountController">
+    <children>
+        <Button fx:id="valcode" layoutX="264.0" layoutY="270.0" mnemonicParsing="false" styleClass="blue-btn" text="Envoyer" />
+        <TextField fx:id="code" layoutX="151.0" layoutY="214.0" prefWidth="300.0" promptText="Code de vérification" styleClass="tf_box" />
+        <Label layoutX="158.0" layoutY="44.0" text="Vérifier compte" textFill="#2196f3">
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

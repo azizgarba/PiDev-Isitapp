@@ -1,0 +1,9 @@
+
+.table-cell:choicebox {
+    -fx-background-color:  #e24933;
+}
+
+.table-cell:selected {
+    -fx-background-color: -fx-accent;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="441.0" prefWidth="736.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.RechercheReclamationController">
+    
+   <children>
+      <ComboBox fx:id="comborech" layoutX="386.0" layoutY="54.0" prefWidth="150.0" />
+      <TableView fx:id="tablerech" layoutX="36.0" layoutY="125.0" prefHeight="253.0" prefWidth="646.0">
+        <columns>
+          <TableColumn fx:id="recrech" prefWidth="81.60003280639648" text="Id reclamation" />
+          <TableColumn fx:id="userrech" prefWidth="68.79998779296875" text="Id_user" />
+            <TableColumn fx:id="catrech" prefWidth="75.0" text="Categorie" />
+            <TableColumn fx:id="objrech" prefWidth="140.0" text="Objet" />
+            <TableColumn fx:id="descrech" prefWidth="206.79998779296875" text="Description" />
+            <TableColumn fx:id="etrech" prefWidth="72.0" text="Etat" />
+        </columns>
+      </TableView>
+      <Label layoutX="130.0" layoutY="51.0" text="Que cherchez-vous ? " textFill="#f7f6f6">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

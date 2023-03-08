@@ -1,0 +1,91 @@
+
+/* 
+    Created on : 14 févr. 2023, 19:31:21
+    Author     : LENOVO
+*/
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF) ; 
+}
+.trans-btn-white-border{
+    -fx-background-color: #091F4E;
+    -fx-background-radius: 15px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+
+
+.trans-btn-white-border-black{
+    -fx-background-color: #091F4E;
+    -fx-background-radius: 15px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 15px;
+    -fx-border-width: 1px;
+    -fx-text-fill: black;
+}
+
+.white-pane{
+    -fx-background-color: #d42347;
+}
+.blue-panel{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E,#FF854C);
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: whitesmoke;
+}
+.tf{
+    -fx-background-color: transparent;    
+}
+.blue-btn{
+    -fx-background-color: #e24933;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+        -fx-background-radius: 15px;
+
+}
+.trans-signup-btn-white-border{
+    -fx-background-color: #18b9dF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+
+.label-profil{
+    -fx-text-fill: linear-gradient(from 25% 25% to 100% 100%, #D91F4E,#FF854C);
+}
+
+.text{
+    -fx-text-fill: white;
+    
+}
+
+.textB{
+    -fx-text-fill: black;
+    
+}
+
+.selected{
+    -fx-border-color: #091F4E;
+    -fx-border-width: 0 0 0 8
+}
+
+
+.transparent{
+  -fx-background-color: transparent;  
+}
+
+
+.scroll-pane > .viewport{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF);
+}
+

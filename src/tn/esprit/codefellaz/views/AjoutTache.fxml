@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.AjouterTacheController">
+    <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="380.0" layoutY="70.0" strokeLineCap="BUTT" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajout des taches" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Serif Bold" size="26.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="92.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom de tache :">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="94.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Priorité : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="92.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date limite : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" layoutX="94.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <TextArea fx:id="description_tache" layoutX="225.0" layoutY="306.0" prefHeight="100.0" prefWidth="500.0" />
+      <TextField fx:id="priorite_tache" layoutX="225.0" layoutY="250.0" />
+      <DatePicker fx:id="dateL_tache" layoutX="225.0" layoutY="436.0" />
+      <TextField fx:id="nom_tache" layoutX="225.0" layoutY="200.0" />
+
+
+      <Button fx:id="enregistrer_tache" layoutX="725.0" layoutY="575.0" mnemonicParsing="false" style="-fx-background-color: e24933; -fx-background-radius: 30px; -fx-text-fill: whitesmoke;" text="Enregistrer">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Button>
+      <Text fill="WHITE" layoutX="92.0" layoutY="530.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Statut :">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <ChoiceBox fx:id="type_tachebox" layoutX="225.0" layoutY="511.0" prefWidth="150.0" />
+      <Button fx:id="revenir_affichage" layoutX="19.0" layoutY="18.0" mnemonicParsing="false" style="-fx-background-color: e24933; -fx-text-fill: whitesmoke; -fx-background-radius: 30px;" text="Affichage">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="nomtachecontrol" layoutX="443.0" layoutY="205.0" prefHeight="21.0" prefWidth="295.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="prioritetachecontrol" layoutX="443.0" layoutY="255.0" prefHeight="21.0" prefWidth="295.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="datetachecontrol" layoutX="462.0" layoutY="441.0" prefHeight="32.0" prefWidth="284.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font></Label>
+      <Text fill="WHITE" layoutX="92.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Projet:">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="id_project" layoutX="225.0" layoutY="149.0" prefWidth="150.0" />
+      <Label fx:id="idhere" layoutX="45.0" layoutY="146.0" prefHeight="21.0" prefWidth="23.0" visible="false" />
+      <ChoiceBox fx:id="choix_tache" layoutX="228.0" layoutY="639.0" prefWidth="150.0" />
+      <Separator blendMode="SOFT_LIGHT" layoutX="92.0" layoutY="592.0" prefHeight="5.0" prefWidth="596.0" />
+      <Label layoutX="85.0" layoutY="644.0" text="Tache a modifier :" textFill="WHITE">
+         <font>
+            <Font name="Serif Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="modifier_tache" layoutX="857.0" layoutY="575.0" mnemonicParsing="false" style="-fx-background-color: e24933; -fx-background-radius: 30px; -fx-text-fill: whitesmoke;" text="Modifier">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font>
+      </Button>
+      <Label fx:id="hiddenidtache" layoutX="33.0" layoutY="644.0" prefHeight="21.0" prefWidth="35.0" textFill="WHITE" visible="false" />
+      <Label fx:id="desccontrol" layoutX="738.0" layoutY="323.0" prefHeight="42.0" prefWidth="257.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/lists.css" />
+      <URL value="@../styles/choicebox.css" />
+   </stylesheets>
+</AnchorPane>

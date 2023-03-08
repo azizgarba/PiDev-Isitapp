@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="599.0" prefWidth="821.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/menu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.ConsulterReclamationAdminController">
+    
+   <children>
+      <Label layoutX="286.0" layoutY="27.0" prefHeight="46.0" prefWidth="284.0" text="Les Réclamations" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="83.0" text="Espace Admin " textFill="#f2efef">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablerec" layoutX="34.0" layoutY="167.0" prefHeight="189.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="UtilisateurReclamation" prefWidth="83.20001220703125" text="Id_utilisateur" />
+          <TableColumn fx:id="id_reclamation" prefWidth="100.39997863769531" text="Id_reclamation" />
+            <TableColumn fx:id="ObjetReclamation" prefWidth="90.4000244140625" text="Objet" />
+            <TableColumn fx:id="categorieReclamation" prefWidth="96.0" text="Catégorie" />
+            <TableColumn fx:id="rec" prefWidth="151.20001220703125" text="Reclamation" />
+            <TableColumn fx:id="etatReclamation" prefWidth="56.79998779296875" text="Etat" />
+        </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="384.0" text="Saisissez l'id de réclamation " textFill="#fcfafa" visible="false" />
+      <TextField fx:id="idReclamationadmin" layoutX="245.0" layoutY="380.0" prefHeight="25.0" prefWidth="367.0" visible="false" />
+      <Button fx:id="btnr" layoutX="646.0" layoutY="280.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="blue-btn" text="Modifier" />
+      <Button fx:id="supprimerrec" layoutX="648.0" layoutY="236.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="blue-btn" text="Supprimer" />
+      <TextArea fx:id="textReponse" layoutX="245.0" layoutY="425.0" prefHeight="135.0" prefWidth="367.0" />
+      <Label layoutX="34.0" layoutY="438.0" text="Reponse" textFill="#f7f2f2" />
+      <Button fx:id="validerReponse" layoutX="653.0" layoutY="434.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="blue-btn" text="Repondre" />
+      <Button fx:id="rechercherec" layoutX="645.0" layoutY="323.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" styleClass="blue-btn" text="Filtrer" />
+      <Button fx:id="pdf" layoutX="645.0" layoutY="187.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="78.0" styleClass="blue-btn" stylesheets="@../styles/ajoutercategoriep.css" text="PDF" />
+   </children>
+</AnchorPane>

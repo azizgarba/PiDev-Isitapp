@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="dash" prefHeight="688.0" prefWidth="1622.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.DashAdminController">
+   <children>
+      <VBox layoutX="28.0" layoutY="98.0" prefHeight="571.0" prefWidth="551.0" spacing="40.0">
+         <children>
+            <TextField fx:id="dashuser" promptText="Nom d'utilisateur" styleClass="tf_box" />
+            <TextField fx:id="dashemail" promptText="Email" styleClass="tf_box" />
+            <TextField fx:id="dashtel" promptText="Télephone" styleClass="tf_box" />
+            <DatePicker fx:id="dashnais" promptText="Date de naissance" />
+            <ComboBox fx:id="dashgenr" prefWidth="150.0" promptText="Genre" />
+            <ComboBox fx:id="dashrol" prefWidth="150.0" promptText="Rôle" />
+            <HBox prefHeight="57.0" prefWidth="490.0" spacing="90.0">
+               <children>
+                  <FontAwesomeIconView fx:id="dashaj" fill="WHITE" glyphName="PLUS" onMouseClicked="#ajout" size="40">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="dashmod" fill="WHITE" glyphName="PENCIL" onMouseClicked="#modifier" size="40" text="">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="dashbloq" fill="WHITE" glyphName="LOCK" onMouseClicked="#bloc" size="40">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="dashdebloq" fill="WHITE" glyphName="UNLOCK" onMouseClicked="#debloq" size="40">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fx:id="exportpdf" fill="WHITE" glyphName="LIST" onMouseClicked="#handleExportPdf" size="40">
+                     <HBox.margin>
+                        <Insets top="10.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="80.0" prefWidth="551.0" spacing="90.0">
+               <children>
+                  <FontAwesomeIconView fx:id="ajoutcatpro" fill="WHITE" glyphName="CLIPBOARD" onMouseClicked="#ajoutercategorieproduit" size="40" />
+                  <FontAwesomeIconView fx:id="ajoutcatser" fill="WHITE" glyphName="TAGS" onMouseClicked="#ajoutercatser" size="40" />
+                  <FontAwesomeIconView fx:id="reclamation" fill="WHITE" glyphName="EXCLAMATION" onMouseClicked="#reclamationbtn" size="40" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="listusers" layoutX="608.0" layoutY="50.0" onMouseClicked="#ajoutercategorieproduit" prefHeight="571.0" prefWidth="978.0">
+        <columns>
+          <TableColumn fx:id="coluser" prefWidth="127.0" text="Nom utilisateur" />
+          <TableColumn fx:id="colemai" prefWidth="162.0" text="Email" />
+            <TableColumn fx:id="coltel" prefWidth="117.0" text="Téléphone" />
+            <TableColumn fx:id="colnaiss" prefWidth="146.0" text="Naissance" />
+            <TableColumn fx:id="colgenr" prefWidth="142.0" text="Genre" />
+            <TableColumn fx:id="colrol" prefWidth="156.0" text="Rôle" />
+            <TableColumn fx:id="colstat" prefWidth="72.0" text="Status" />
+            <TableColumn fx:id="coleta" prefWidth="64.0" text="Etat" />
+        </columns>
+      </TableView>
+      <HBox layoutX="-1.0" layoutY="14.0" prefHeight="72.0" prefWidth="609.0" spacing="20.0">
+         <children>
+            <TextField fx:id="fieldrech" promptText="Entrez un mot ..." styleClass="tf_box" />
+            <FontAwesomeIconView fx:id="btnrech" fill="WHITE" glyphName="SEARCH" onMouseClicked="#recherche" size="25">
+               <HBox.margin>
+                  <Insets top="3.0" />
+               </HBox.margin>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fx:id="refresh" fill="WHITE" glyphName="REFRESH" onMouseClicked="#refresh" size="20" wrappingWidth="15.285714149475098">
+               <HBox.margin>
+                  <Insets left="10.0" top="7.0" />
+               </HBox.margin></FontAwesomeIconView>
+         </children>
+         <padding>
+            <Insets left="30.0" top="10.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets top="20.0" />
+         </opaqueInsets>
+      </HBox>
+      <FontAwesomeIconView glyphName="TIMES" layoutX="1556.0" layoutY="24.0" onMouseClicked="#close" size="20" wrappingWidth="12.428571701049805" />
+   </children>
+</AnchorPane>

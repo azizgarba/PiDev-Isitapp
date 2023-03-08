@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="listeS" maxHeight="589.0" maxWidth="895.0" minHeight="589.0" minWidth="825.0" prefHeight="589.0" prefWidth="825.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/styleS.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.OffreServiceHomeController">
+   <children>
+      <AnchorPane fx:id="serviceView" layoutY="1.0" maxHeight="589.0" maxWidth="826.0" prefHeight="588.0" prefWidth="826.0" visible="false">
+         <children>
+            <AnchorPane layoutX="601.0" layoutY="97.0" prefHeight="16.0" prefWidth="252.0" AnchorPane.bottomAnchor="323.0" AnchorPane.rightAnchor="133.57158203125005" AnchorPane.topAnchor="97.0">
+               <children>
+                  <Text fx:id="desc" layoutX="158.0" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="601.0" layoutY="196.0" prefHeight="23.0" prefWidth="222.0" AnchorPane.bottomAnchor="224.0" AnchorPane.rightAnchor="160.77158203124998" AnchorPane.topAnchor="196.0">
+               <children>
+                  <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="budget" layoutX="163.0" layoutY="19.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="599.0" layoutY="240.0" prefHeight="23.0" prefWidth="254.0" AnchorPane.bottomAnchor="180.0" AnchorPane.rightAnchor="133.97158203125002" AnchorPane.topAnchor="240.0">
+               <children>
+                  <Text layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Limite: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="date" layoutX="152.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Limite: ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="599.0" layoutY="291.0" prefHeight="23.0" prefWidth="229.0" AnchorPane.bottomAnchor="129.0" AnchorPane.rightAnchor="158.77158203124998" AnchorPane.topAnchor="291.0">
+               <children>
+                  <Text layoutX="6.0" layoutY="12.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Propriete">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="prop" layoutX="151.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Propriete">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="446.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="444.0" prefWidth="200.0" spacing="50.0" styleClass="trans-btn-white-border-black" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="modifier" mnemonicParsing="false" prefHeight="27.0" prefWidth="214.0" styleClass="trans-btn-white-border" stylesheets="@../style/style.css" text="Modifier" />
+                        <Button fx:id="supprimer" mnemonicParsing="false" prefHeight="27.0" prefWidth="226.0" styleClass="blue-btn" stylesheets="@../style/style.css" text="Supprimerr" />
+                        <Button fx:id="returnB" mnemonicParsing="false" prefHeight="27.0" prefWidth="203.0" styleClass="blue-btn" stylesheets="@../style/style.css" text="return" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="bouttons" layoutX="7.0" layoutY="11.0" maxHeight="589.0" maxWidth="825.0" prefHeight="589.0" prefWidth="825.0">
+         <children>
+            <Button fx:id="afficher" layoutX="195.0" layoutY="139.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="580.0" text="Afficher les Demande de services disponible actuellement ">
+               <font>
+                  <Font name="Lucida Bright" size="19.0" />
+               </font>
+            </Button>
+            <Button fx:id="retour" layoutX="382.0" layoutY="232.0" mnemonicParsing="false" text="Retour vers Acceuil">
+               <font>
+                  <Font name="Lucida Bright" size="19.0" />
+               </font>
+            </Button>
+            <Text fill="#5334c4" layoutX="303.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bienvenue sur notre application isItAPP">
+               <font>
+                  <Font name="Lucida Bright" size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+      <AnchorPane id="AnchorPane" fx:id="modifierView" layoutX="-3.0" layoutY="10.0" maxHeight="589.0" maxWidth="854.0" prefHeight="570.0" prefWidth="827.0" visible="false">
+         <children>
+            <AnchorPane prefHeight="455.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <VBox alignment="CENTER" layoutX="-4.0" prefHeight="444.0" prefWidth="206.0" spacing="50.0" styleClass="trans-btn-white-border" stylesheets="@../style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Budget">
+                           <font>
+                              <Font name="Lucida Bright" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Description : ">
+                           <font>
+                              <Font name="Lucida Bright" size="13.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+                           <font>
+                              <Font name="Lucida Bright" size="13.0" />
+                           </font>
+                        </Text>
+                        <Button fx:id="valider" mnemonicParsing="false" prefHeight="27.0" prefWidth="207.0" styleClass="trans-btn-white-border" stylesheets="@../style/style.css" text="Valider les modifications" />
+                        <Button fx:id="annuler" mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="blue-btn" stylesheets="@../style/style.css" text="Annuler" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Text fill="#fffefe" layoutX="413.0" layoutY="18.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modifier votre demande">
+               <font>
+                  <Font name="Lucida Bright" size="13.0" />
+               </font>
+            </Text>
+            <Text fill="#fffefe" layoutX="347.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez remplir attentivement tous les champs">
+               <font>
+                  <Font name="Lucida Bright" size="13.0" />
+               </font>
+            </Text>
+            <TextField fx:id="budget1" layoutX="348.0" layoutY="67.0" />
+            <TextArea fx:id="description_demande" layoutX="347.0" layoutY="134.0" prefHeight="58.0" prefWidth="434.0" />
+            <DatePicker fx:id="date1" layoutX="347.0" layoutY="222.0" prefHeight="26.0" prefWidth="200.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="619.0" styleClass="blue-panel" stylesheets="@/tn/esprit/codefellaz/styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.SignUpController">
+    <children>
+        <Label text="Inscription" textFill="#ffffff">
+            <font>
+                <Font size="20.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="20.0" />
+            </VBox.margin>
+        </Label>
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="nameins" promptText="Nom de l'utilisateur" styleClass="tf_box" HBox.hgrow="ALWAYS" />
+            
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="mailins" promptText="Adresse Email" styleClass="tf_box" HBox.hgrow="ALWAYS" />
+            
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="15.0" />
+            </VBox.margin>
+        </HBox>
+        <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <TextField fx:id="telins" promptText="Téléphone" styleClass="tf_box" HBox.hgrow="ALWAYS" />
+          
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <DatePicker fx:id="naisins" styleClass="date-picker" editable="false" promptText="Date de naissance">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </DatePicker>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="284.0" prefHeight="40.0" prefWidth="200.0">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+            <children>
+                <ComboBox fx:id="genrins" styleClass="combo-box" prefWidth="150.0" promptText="Genre" />
+            </children>
+        </HBox>
+        <PasswordField fx:id="passins" promptText="Mot de passe" styleClass="tf_box">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </PasswordField>
+        <PasswordField fx:id="vpassins" layoutX="25.0" layoutY="281.0" promptText="Vérifier mot de passe" styleClass="tf_box">
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </PasswordField>
+        <HBox alignment="CENTER_LEFT" layoutX="25.0" layoutY="294.0" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <ComboBox fx:id="rolins" styleClass="combo-box" prefWidth="150.0" promptText="Rôle" />
+                <Button fx:id="photins" mnemonicParsing="false" prefHeight="10.0" prefWidth="150.0" styleClass="blue-btn" text="Ajouter photo" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                    <HBox.margin>
+                        <Insets left="200.0" />
+                    </HBox.margin>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </Button>
+                <ImageView fx:id="photplace" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                    <viewport>
+                        <Rectangle2D />
+                    </viewport>
+                </ImageView>
+            </children>
+            <VBox.margin>
+                <Insets left="15.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </HBox>
+        <Button fx:id="valins" mnemonicParsing="false" prefHeight="38.0" prefWidth="456.0" styleClass="blue-btn" text="Valider" textFill="WHITE">
+            <font>
+                <Font size="17.0" />
+            </font>
+            <VBox.margin>
+                <Insets left="70.0" right="15.0" top="20.0" />
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>

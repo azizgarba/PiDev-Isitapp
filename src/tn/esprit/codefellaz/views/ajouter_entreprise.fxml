@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.Ajouter_entrepriseController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="568.0" prefWidth="709.0">
+         <children>
+            <Pane layoutX="1.0" layoutY="-11.0" prefHeight="104.0" prefWidth="709.0" style="-fx-background-color: #004493;">
+               <children>
+                  <Label layoutX="171.0" layoutY="39.0" prefHeight="38.0" prefWidth="355.0" text="ajouter entreprise" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="Microsoft Sans Serif" size="33.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Text layoutX="89.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="numero telephone" />
+            <Text layoutX="108.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="id representant" />
+            <Text layoutX="128.0" layoutY="208.0" strokeType="OUTSIDE" strokeWidth="0.0" text="adresse" />
+            <ImageView fx:id="Photo_Input" />
+            <Button fx:id="button_Submit" layoutX="521.0" layoutY="445.0" mnemonicParsing="false" onAction="#handleButtonSubmitAction" prefHeight="38.0" prefWidth="142.0" style="-fx-background-color: d42347;" styleClass="button_Submit" text="Valider" textOverrun="LEADING_WORD_ELLIPSIS">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color blue="1.0" green="1.0" red="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+            <ImageView fitHeight="38.0" fitWidth="41.0" layoutX="668.0" layoutY="530.0" pickOnBounds="true" smooth="false" styleClass="img">
+               <image>
+                  <Image url="@../../../../../../../Users/htc/Documents/NetBeansProjects/prj/src/prj/utils/images/Image1.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="128.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="description" />
+            <Text fx:id="alertNom" fill="#f10a0a" layoutX="286.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="142.0000022041222" />
+            <Text fx:id="alertCIN" fill="#f10a0a" layoutX="527.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.00000110708334" />
+            <Text fx:id="alertPrenom" fill="#f10a0a" layoutX="282.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.00000110708334" />
+            <Text fx:id="alertDatenaissance" fill="#f10a0a" layoutX="280.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.00000110708334" />
+            <Text fx:id="alertRole" fill="#f10a0a" layoutX="523.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.00000110708334" />
+            <Text fx:id="alertTel" fill="#f10a0a" layoutX="283.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.00000110708334" />
+            <TextArea fx:id="description_entreprise" layoutX="230.0" layoutY="334.0" prefHeight="178.0" prefWidth="177.0" style="visibility: #dcdcdc;" />
+            <TextField fx:id="id_representant" layoutX="245.0" layoutY="129.0" />
+            <TextField fx:id="adresse" layoutX="244.0" layoutY="191.0" />
+            <TextField fx:id="tel_entreprise" layoutX="245.0" layoutY="266.0" />
+            <Button fx:id="Timage" layoutX="533.0" layoutY="153.0" mnemonicParsing="false" onAction="#addimgcours" prefHeight="16.0" prefWidth="156.0" text="Browse" />
+            <Text layoutX="483.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="image" />
+            <ImageView fx:id="imgajoutincours" fitHeight="76.0" fitWidth="112.0" layoutX="536.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="imgpathttt" layoutX="563.0" layoutY="545.0" text="Label" visible="false" />
+            <Button fx:id="back" layoutX="572.0" layoutY="512.0" mnemonicParsing="false" onAction="#back" text="retour" visible="false" />
+            <Button fx:id="entreprise" layoutX="27.0" layoutY="497.0" mnemonicParsing="false" text="Mes entreprises" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

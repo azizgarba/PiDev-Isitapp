@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="profil" prefHeight="589.0" prefWidth="825.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.ProfilController">
+   <VBox layoutX="318.0" layoutY="64.0" prefHeight="274.0" prefWidth="190.0" spacing="50.0" AnchorPane.leftAnchor="318.0" AnchorPane.topAnchor="64.0">
+      <children>
+         <Button fx:id="projets" mnemonicParsing="false" styleClass="blue-btn" text="Mes projets" />
+              <Button fx:id="StatistiquesP" mnemonicParsing="false" styleClass="blue-btn" text="Statistiques des produits" />
+            <Button fx:id="AfficherReclamationButton" mnemonicParsing="false" styleClass="blue-btn" text="Afficher reclamations" />
+          <Button fx:id="changePasswordButton" mnemonicParsing="false" styleClass="blue-btn" text="Changer mot de passe" />
+          <Button fx:id="deleteAccountButton" mnemonicParsing="false" prefHeight="31.0" prefWidth="169.0" styleClass="blue-btn" text="supprimer compte" />
+      <Button fx:id="MesServices" mnemonicParsing="false" styleClass="blue-btn" text="Mes services" />
+      </children>
+   </VBox>
+   
+
+</AnchorPane>

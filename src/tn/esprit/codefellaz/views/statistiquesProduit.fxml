@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="950.0" styleClass="blue-btn" stylesheets="@../styles/ajoutercategoriep.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.StatistiquesProduitController">
+   <children>
+      <VBox alignment="CENTER" layoutX="-2.0" prefHeight="600.0" prefWidth="950.0">
+         <children>
+            <Label prefHeight="75.0" prefWidth="715.0" styleClass="tf_box" text="Statistiques concernant les categories disponibles">
+               <font>
+                  <Font name="Agency FB Bold" size="41.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </Label>
+            <Pane prefHeight="70.0" prefWidth="950.0" />
+            <HBox prefHeight="387.0" prefWidth="950.0" styleClass="shadow">
+               <children>
+                  <VBox prefHeight="387.0" prefWidth="460.0" styleClass="contrainerStat" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" text="Diagramme linéaire - Line" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB" size="29.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="137.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Pane prefHeight="36.0" prefWidth="460.0" />
+                        <LineChart fx:id="lineChart" legendVisible="false" prefHeight="300.0" prefWidth="417.0">
+                          <xAxis>
+                            <CategoryAxis side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Pane prefHeight="387.0" prefWidth="56.0" />
+                  <VBox prefHeight="387.0" prefWidth="384.0" styleClass="contrainerStat" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" text="Diagramme circulaire - PIE" textFill="WHITE">
+                           <font>
+                              <Font name="Agency FB" size="29.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="77.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Pane prefHeight="58.0" prefWidth="384.0" />
+                        <PieChart fx:id="pieChart" legendVisible="false" prefHeight="346.0" prefWidth="384.0" />
+                     </children>
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

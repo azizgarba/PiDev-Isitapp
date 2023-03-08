@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="437.0" prefWidth="656.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.ReponseReclamationClientController">
+    <stylesheets>
+        <URL value="@/tn/esprit/codefellaz/style/reponsereclamationclient.css" />
+    </stylesheets>
+   <children>
+      <TableView layoutX="36.0" layoutY="100.0" prefHeight="293.0" prefWidth="584.0">
+        <columns>
+          <TableColumn fx:id="Reponse" prefWidth="236.4000358581543" text="Votre réclamation" />
+            <TableColumn fx:id="Reponse1" prefWidth="110.0" text="Etat" />
+          <TableColumn fx:id="Reclamation" prefWidth="236.0" text="Réponse" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

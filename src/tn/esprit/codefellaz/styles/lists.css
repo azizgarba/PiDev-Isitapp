@@ -1,0 +1,18 @@
+.list-cell:hover {
+    -fx-background-color: #D3D3D3; /* Set the background color when hovering over a cell */
+}
+
+.list-view:focused .list-cell:focused {
+    -fx-background-color:  linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF); /* Set the background color for focused cells */
+}
+
+.list-view .scroll-bar:vertical {
+    -fx-background-color: #F5F5F5; /* Set the background color for the vertical scrollbar */
+}
+
+.list-view .scroll-bar:horizontal {
+    -fx-background-color:  linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF); /* Set the background color for the horizontal scrollbar */
+}
+.list-view {
+    -fx-background-radius: 20;
+}

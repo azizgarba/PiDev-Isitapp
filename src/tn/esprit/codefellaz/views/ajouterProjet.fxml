@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.AjouterProjetController">
+     <children>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="397.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un projet" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Serif Bold" size="26.0" />
+         </font></Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="99.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom du projet : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="100.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="la priorité du projet : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="107.0" layoutY="419.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date limite : ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <Text fill="WHITE" fontSmoothingType="LCD" layoutX="98.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description du projet: ">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Text>
+      <TextArea fx:id="description_projet" layoutX="299.0" layoutY="274.0" prefHeight="100.0" prefWidth="400.0" />
+      <TextField fx:id="nom_projet" layoutX="299.0" layoutY="162.0" />
+      <TextField fx:id="priorite_projet" layoutX="299.0" layoutY="217.0" />
+      <Button fx:id="enregistrer_projet" layoutX="839.0" layoutY="452.0" mnemonicParsing="false" style="-fx-background-color: e24933; -fx-text-fill: whitesmoke; -fx-background-radius: 10px;" text="Enregistrer">
+         <font>
+            <Font name="Serif Bold" size="19.0" />
+         </font></Button>
+      <DatePicker fx:id="dateL_projet" editable="false" layoutX="299.0" layoutY="401.0" />
+      <Button fx:id="projet_revenir" layoutX="13.0" layoutY="12.0" mnemonicParsing="false" style="-fx-background-color: e24933; -fx-text-fill: whitesmoke; -fx-background-radius: 30px;" text="Affichage">
+         <font>
+            <Font name="Serif Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="nomprojetcontrol" layoutX="501.0" layoutY="163.0" prefHeight="29.0" prefWidth="242.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="prioriteprojetcontrol" layoutX="501.0" layoutY="218.0" prefHeight="29.0" prefWidth="242.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="desccontrol" layoutX="704.0" layoutY="298.0" prefHeight="51.0" prefWidth="281.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="datelcontrol" layoutX="541.0" layoutY="402.0" prefHeight="29.0" prefWidth="281.0" visible="false">
+         <font>
+            <Font name="Serif Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

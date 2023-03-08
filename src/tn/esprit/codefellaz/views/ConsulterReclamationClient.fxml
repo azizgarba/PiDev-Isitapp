@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="804.0" styleClass="pane" stylesheets="@/tn/esprit/codefellaz/styles/menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.ConsulterReclamationController">
+    
+   <children>
+      <Label layoutX="296.0" layoutY="43.0" text="Vos réclamations" textFill="#f7f7f7">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableRecClient" editable="true" layoutX="26.0" layoutY="166.0" prefHeight="280.0" prefWidth="428.0">
+        <columns>
+          <TableColumn fx:id="categorie_traite" prefWidth="75.0" text="CATEGORIE" />
+          <TableColumn fx:id="objet_traite" prefWidth="75.0" text="OBJET" />
+            <TableColumn fx:id="etat_traite" prefWidth="120.80000305175781" text="ETAT" />
+            <TableColumn fx:id="reclamationClient" minWidth="0.0" prefWidth="166.800048828125" text="Reclamation" />
+        </columns>
+      </TableView>
+      <TableView fx:id="ViewReponse" layoutX="483.0" layoutY="166.0" prefHeight="280.0" prefWidth="298.0">
+        <columns>
+          <TableColumn fx:id="idRec" prefWidth="97.199951171875" text="Id_Reclamation" />
+            <TableColumn fx:id="rep" minWidth="0.0" prefWidth="199.5999755859375" text="Reponse" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

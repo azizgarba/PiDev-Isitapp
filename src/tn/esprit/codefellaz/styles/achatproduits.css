@@ -1,0 +1,54 @@
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 20;
+    
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+}
+
+.search-button{
+    -fx-background-color: #828282;
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #D3D3D3;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.chosen-product-card{
+    -fx-background-color: #F16C31;
+    -fx-background-radius: 30;
+}
+
+.add-btn{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+}
+
+.SelectionChosen{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E,#FF854C);
+    -fx-background-radius: 20;
+}
+
+.free-delivery-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 20;
+}
+
+.shopping-online-card{
+    -fx-background-color: #BAEAC3;
+    -fx-background-radius: 20;
+}
+
+.product-item{
+    -fx-background-color: #FFFFFF;
+        -fx-background-radius: 30;
+}
+.mainFxmlClass {
+
+}

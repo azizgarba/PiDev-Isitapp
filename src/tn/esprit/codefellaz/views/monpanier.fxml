@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="589.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.MonpanierController">
+   <children>
+      <BorderPane layoutX="-1.0" prefHeight="589.0" prefWidth="825.0">
+         <left>
+            <VBox prefHeight="200.0" prefWidth="277.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="90.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Votre Panier" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="25.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="10.0" text="  " textFill="#828282">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="45.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/ic_cart.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox fx:id="chosenProduct" alignment="CENTER" prefHeight="314.0" prefWidth="217.0" styleClass="chosen-product-card">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" top="50.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="217.0">
+                           <children>
+                              <Label fx:id="productName" alignment="CENTER" prefHeight="30.0" prefWidth="120.0" text="Produit" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="productPrice" alignment="CENTER" prefHeight="36.0" prefWidth="78.0" text="2.5" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="-3.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <ImageView fx:id="productImg" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+                        <HBox prefHeight="36.0" prefWidth="217.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="111.0" text="Categorie :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="productCat" alignment="CENTER" prefHeight="30.0" prefWidth="95.0" text="BOIS" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="36.0" prefWidth="217.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="30.0" prefWidth="111.0" text="  Freelancer :" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="productOwner" alignment="CENTER" prefHeight="30.0" prefWidth="95.0" text="Mr x" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Button fx:id="Supprimerpanier" mnemonicParsing="false" styleClass="add-btn" text="Supprimer du panier" textFill="#bcbcbc">
+                           <VBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+               <stylesheets>
+                  <URL value="@../styles/achatproduits.css" />
+                  <URL value="@../styles/ajoutercategoriep.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="right-bar" />
+                  <String fx:value="pane" />
+               </styleClass>
+            </VBox>
+         </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" styleClass="pane" stylesheets="@../styles/ajoutercategoriep.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="45.0" prefWidth="200.0">
+                     <VBox.margin>
+                        <Insets left="15.0" right="15.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="257.0" text="Vous etes entrain de consulter votre panier.." textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="13.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="26.0" text="  " textFill="#828282">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="30.0" prefWidth="32.0" text="  " textFill="#828282">
+                           <font>
+                              <Font name="Cambria" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="id_panier" alignment="CENTER" prefHeight="30.0" prefWidth="137.0" text="Utilisateur connecte :" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria" size="12.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Text fx:id="nomuser" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="USERNAME" wrappingWidth="111.73671245574951">
+                           <HBox.margin>
+                              <Insets top="17.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox prefHeight="390.0" prefWidth="578.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <ScrollPane fx:id="scroll" prefHeight="380.0" prefWidth="547.0" styleClass="transparent" stylesheets="@../styles/achatproduits.css">
+                           <HBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </HBox.margin>
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="0.0" prefWidth="14.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                     <VBox.margin>
+                        <Insets right="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+   <stylesheets>
+      <URL value="@../styles/achatproduits.css" />
+      <URL value="@../styles/ajoutercategoriep.css" />
+   </stylesheets>
+</AnchorPane>

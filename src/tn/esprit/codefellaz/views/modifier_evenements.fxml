@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1800.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tn.esprit.codefellaz.controllers.Modifier_evenementsController">
+    <children>
+      <Label layoutX="27.0" layoutY="50.0" prefHeight="26.0" prefWidth="155.0" text="Nom de l'evenement :" textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="113.0" prefHeight="26.0" prefWidth="155.0" text="Logo de l'evenement :" textFill="WHITE" />
+      <Label layoutX="27.0" layoutY="281.0" prefHeight="26.0" prefWidth="198.0" text="description de l'evenement :" textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="450.0" prefHeight="26.0" prefWidth="219.0" text="Emplacement de l'evenement :" textFill="WHITE" />
+      <Label layoutX="27.0" layoutY="513.0" prefHeight="26.0" prefWidth="155.0" text="Date de l'evenement :" textFill="WHITE" />
+      <Label layoutX="26.0" layoutY="576.0" prefHeight="26.0" prefWidth="268.0" text="Nombre de personnes de l'evenement :" textFill="WHITE" />
+      <Label layoutX="28.0" layoutY="644.0" prefHeight="26.0" prefWidth="155.0" text="Type de l'evenement :" textFill="WHITE" />
+      <Label layoutX="27.0" layoutY="707.0" prefHeight="26.0" prefWidth="198.0" text="Nom du represantant :" textFill="WHITE" />
+      <TextField fx:id="nom_ajout" layoutX="317.0" layoutY="48.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="logo_ajout" layoutX="317.0" layoutY="111.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="emplace_ajout" layoutX="317.0" layoutY="448.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextArea fx:id="desc_ajout" layoutX="317.0" layoutY="194.0" prefHeight="200.0" prefWidth="200.0" />
+      <DatePicker fx:id="date_ajout" layoutX="317.0" layoutY="511.0" />
+      <TextField fx:id="nbr_perso_ajout" layoutX="317.0" layoutY="574.0" prefHeight="31.0" prefWidth="200.0" />
+      <ChoiceBox fx:id="type_event" layoutX="317.0" layoutY="642.0" prefHeight="31.0" prefWidth="200.0" />
+      <TextField fx:id="nom_res_ajout" layoutX="317.0" layoutY="705.0" prefHeight="31.0" prefWidth="200.0" />
+      <Button fx:id="but_sauv" layoutX="87.0" layoutY="780.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="146.0" style="-fx-background-color: #e24933; -fx-background-radius: 10px;" text="Sauvegarder" textFill="WHITE" />
+      <Button fx:id="but_annuler" layoutX="317.0" layoutY="780.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="146.0" style="-fx-background-color: #e24933; -fx-background-radius: 10px;" text="Annuler" textFill="WHITE" />
+      <TextField fx:id="id_hidden" disable="true" editable="false" layoutX="722.0" layoutY="48.0" opacity="0.0" />
+      <Label fx:id="label_nom" layoutX="571.0" layoutY="53.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="labe_logo" layoutX="571.0" layoutY="116.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="label_desc" layoutX="571.0" layoutY="284.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="label_emplac" layoutX="571.0" layoutY="453.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="label_date" layoutX="571.0" layoutY="516.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="label_nbr_per" layoutX="571.0" layoutY="579.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <Label fx:id="label_id_rep" layoutX="571.0" layoutY="710.0" prefHeight="21.0" prefWidth="413.0" visible="false" />
+      <ChoiceBox fx:id="emplacement_choice" layoutX="628.0" layoutY="448.0" prefHeight="31.0" prefWidth="218.0" />
+     
+   </children>
+</AnchorPane>

@@ -1,0 +1,89 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.parent{
+    -fx-background-color: transparent;
+}
+.pane{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#091F4E,#18b9dF) ; 
+}
+.trans-btn-white-border{
+    -fx-background-color: #091F4E;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+.white-pane{
+    -fx-background-color: #d42347;
+}
+.blue-panel{
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #D91F4E,#FF854C);
+}
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #DEDEE4;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: whitesmoke;
+}
+.tf{
+    -fx-background-color: transparent;    
+}
+.blue-btn{
+    -fx-background-color: #e24933;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}
+.trans-signup-btn-white-border{
+    -fx-background-color: #18b9dF;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+}
+
+.label-profil{
+    -fx-text-fill: linear-gradient(from 25% 25% to 100% 100%, #D91F4E,#FF854C);
+}
+
+.contrainerStat{
+    -fx-background-color: rgba(255,255,255,0.2); 
+    -fx-background-radius: 10px;
+    
+}
+
+.axis{
+    -fx-stroke: #fff;
+    -fx-fill: #fff;
+    -fx-font-size: 24;
+    -fx-tick-label-fill: #fff;
+}
+
+.default-color0.chart-pie{-fx-pie-color: transparent;}
+.default-color1.chart-pie{-fx-pie-color: transparent;}
+.default-color2.chart-pie{-fx-pie-color: transparent;}
+.default-color3.chart-pie{-fx-pie-color: transparent;}
+.default-color4.chart-pie{-fx-pie-color: transparent;}
+.default-color5.chart-pie{-fx-pie-color: transparent;}
+.default-color6.chart-pie{-fx-pie-color: transparent;}
+.default-color7.chart-pie{-fx-pie-color: transparent;}
+
+.chart-pie-label{
+    -fx-fill: #FFD6DC;
+    -fx-stroke : #091F4E ;
+    -fx-font-size: 15 ;
+}
+
+.chart-pie-label-line{
+    -fx-fill : linear-gradient(from 25% 25% to 100% 100%, #091F4E,#18b9dF) ;
+    -fx-stroke :#091F4E
+}
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+.mainFxmlClass {
+
+}
